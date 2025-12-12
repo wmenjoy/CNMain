@@ -12,11 +12,11 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/PortableGit-2.52.0-64-bit.7z.exe#/dl.7z",
+            "url": "https://githubproxy.cc/https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/PortableGit-2.52.0-64-bit.7z.exe#/dl.7z",
             "hash": "1dc4046dcfb138f62aa04a46b5529adc8abed5033b2af29bb60b66872a836cf8"
         },
         "arm64": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/PortableGit-2.52.0-arm64.7z.exe#/dl.7z",
+            "url": "https://githubproxy.cc/https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/PortableGit-2.52.0-arm64.7z.exe#/dl.7z",
             "hash": "bdc2884b321152225498fadc97cad68c244e047310ea686e4fe18ad7257e5b72"
         }
     },
@@ -60,21 +60,21 @@
         "GIT_INSTALL_ROOT": "$dir"
     },
     "checkver": {
-        "url": "https://api.github.com/repositories/23216272/releases/latest",
+        "url": "https://githubproxy.cc/https://api.github.com/repositories/23216272/releases/latest",
         "jsonpath": "$..browser_download_url",
         "regex": "download/v(?<tag>[\\d.]+windows\\.\\d)/PortableGit-([\\d.]+)-64"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-64-bit.7z.exe#/dl.7z"
+                "url": "https://githubproxy.cc/https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-64-bit.7z.exe#/dl.7z"
             },
             "arm64": {
-                "url": "https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-arm64.7z.exe#/dl.7z"
+                "url": "https://githubproxy.cc/https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-arm64.7z.exe#/dl.7z"
             }
         },
         "hash": {
-            "url": "https://github.com/git-for-windows/git/releases/tag/v$matchTag",
+            "url": "https://githubproxy.cc/https://github.com/git-for-windows/git/releases/tag/v$matchTag",
             "regex": "(?s)$basename.*?$sha256"
         }
     }
